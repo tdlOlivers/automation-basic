@@ -22,9 +22,14 @@ echo 'Renaming juice-shop'
 mv juice-shop_10.1.0/ juice-shop
 echo 'Removing juice-shop zip'
 rm juice-shop-10.1.0_node12_linux_x64.tgz
-echo 'Cloning automation projects'
-git clone https://github.com/tdlOlivers/web-automation-basic.git
-git clone https://github.com/tdlOlivers/api-automation-basic.git
 echo 'Installing maven'
 sudo apt-get install maven
+echo 'Cloning automation projects'
+git clone https://github.com/tdlOlivers/web-automation-basic.git
+cd web-automation-basic/
+mvn compile
+cd ..
+git clone https://github.com/tdlOlivers/api-automation-basic.git
+cd api-automation-basic/
+mvn compile
 echo 'Done'
