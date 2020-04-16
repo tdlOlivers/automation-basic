@@ -32,4 +32,5 @@ cd ..
 git clone https://github.com/tdlOlivers/api-automation-basic.git
 cd api-automation-basic/
 mvn compile
+cd ..
 echo 'Done'
