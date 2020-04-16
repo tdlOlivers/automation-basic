@@ -1,4 +1,6 @@
 echo 'Running setup script'
+echo 'Installing git'
+sudo apt-get install git
 echo 'Downloading google chrome'
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 echo 'Installing google chrome'
