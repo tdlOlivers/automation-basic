@@ -9,6 +9,8 @@ echo 'Removing installation'
 rm google-chrome-stable_current_amd64.deb
 echo 'Updating system'
 sudo apt-get update
+echo 'Installing Visual studio code'
+sudo snap install --classic code
 echo 'Installing pre-requisites for node12'
 sudo apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates vim
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
