@@ -7,7 +7,7 @@ android-studio
 echo 'export ANDROID_HOME=$HOME/Android/Sdk' >> .bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/tools' >> .bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools' >> .bashrc
-xsudo apt install default-jdk
+sudo apt install default-jdk
 echo 'export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64' >> .bashrc
 echo 'export PATH=$JAVA_HOME/bin:$PATH' >> .bashrc
 source .bashrc
