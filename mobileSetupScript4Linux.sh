@@ -14,7 +14,6 @@ echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
 echo 'export ANDROID_HOME=$HOME/Android/Sdk' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/tools' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools' >> ~/.bashrc
-source ~/.bashrc
 wget https://github.com/appium/appium-desktop/releases/download/v1.15.1/Appium-linux-1.15.1.AppImage
 chmod +x Appium-linux-1.15.1.AppImage
 mv Appium-linux-1.15.1.AppImage Desktop/appium-desktop.AppImage
@@ -24,3 +23,4 @@ cd mobile-automation-basic/
 mvn compile
 cd
 android-studio
+source ~/.bashrc
