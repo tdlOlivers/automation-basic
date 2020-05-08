@@ -1,13 +1,13 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install snapd
+yes | sudo apt install snapd
 sudo snap install --classic code # or code-insiders
 sudo snap install android-studio --classic
-sudo apt install git
-sudo apt install npm
-sudo apt install maven
-sudo apt install default-jdk
+yes | sudo apt install git
+yes | sudo apt install npm
+yes | sudo apt install maven
+yes | sudo apt install default-jdk
 sudo npm install -g appium
 echo 'export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64' >> ~/.bashrc
 echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
