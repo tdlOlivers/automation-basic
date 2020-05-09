@@ -4,6 +4,7 @@ sudo apt update
 yes | sudo apt install snapd
 sudo snap install --classic code # or code-insiders
 sudo snap install android-studio --classic
+yes | sudo apt install nmap
 yes | sudo apt install git
 yes | sudo apt install npm
 yes | sudo apt install maven
